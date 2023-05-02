@@ -1,0 +1,170 @@
+*{
+    margin:0;
+    padding:0;
+}
+html{
+    font-size:18px;
+}
+body{
+    font-family: 'Hanken Grotesk', sans-serif;
+    font-size:1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height:90vh;
+
+}
+
+
+/*============== layout =============*/
+.card{
+    box-shadow: 0px -1px 25px 11px rgba(0,0,0,0.07);
+    -webkit-box-shadow: 0px -1px 25px 11px rgba(0,0,0,0.07);
+    -moz-box-shadow: 0px -1px 25px 11px rgba(0,0,0,0.07);
+    display: flex;
+    justify-content: space-between;
+    align-items: stretch;
+    width:95%;
+    max-width:510px;
+    margin:0 auto;
+    border-radius:1em;
+}
+
+.card-score{
+    background: rgb(2,0,36);
+    color: white;
+    background: linear-gradient(0deg, rgba(2,0,36,1) 0%, rgba(46,43,233,1) 0%, rgba(120,87,240,1) 100%); 
+    border-radius:1em;
+    padding:1em;
+    width:50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    
+    color:rgba(255, 255, 255, 0.662);
+}
+.card-summary{
+    width:50%;
+}
+
+
+
+/*============== score style =============*/
+.score{
+    background: rgb(2,0,36);
+    background: linear-gradient(0deg, #4f3eec 0%, rgba(78,33,202,1) 100%);  
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items:end;
+    font-size:0.9rem;
+    width:7em;
+    height:7em;
+}
+
+.card-score h2{
+    font-size:1rem;
+}
+.card-score p{
+    font-size:0.75rem;
+    font-weight:500;
+    margin-bottom:1.8em;
+}
+.score-value{
+    font-size:2.5rem;
+}
+.clear{
+    color: white;
+    margin:0.3em 0;
+    font-weight: 700;
+}
+
+/*============== summary style =============*/
+
+
+.card-summary{
+    padding:1em 1.7em;
+    display: flex;
+    flex-direction: column;
+    justify-content: stretch;
+    align-items: start;
+}
+.card-summary h2{
+    font-size:1rem;
+    font-weight:700;
+}
+.Summary-row{
+    width:100%;
+    box-sizing: border-box;
+    background-color: bisque;
+    border-radius:0.3em;
+    margin:0.7em 0;
+    display: flex;
+    justify-content: space-between;
+    padding:0.5em;
+    font-size:0.9rem;
+}
+.Summary-skill{
+    display: flex;
+}
+.Summary-skill img{
+    margin-right:0.3em;
+}
+
+.red{
+    background-color:#fff6f5;
+    color:hsl(0, 100%, 67%) 
+}
+.yellow{
+    background-color:#fffbf2;
+    color:hsl(39, 100%, 56%);
+}
+.green{
+    background-color:#f2fbfa;
+    color:hsl(166, 100%, 37%);
+}
+.purple{
+    background-color:#f3f3fd;
+    color:hsl(234, 85%, 45%);
+}
+.Summary-stats{
+    color:#303b59;
+}
+.light{
+    opacity:0.7;
+}
+.btn{
+    background-color:#303b59;
+    color:white;
+    text-decoration: none;
+    text-align: center;
+    width:100%;
+    box-sizing: border-box;
+    border-radius:0.3em;
+    margin:0.7em 0;
+    padding:0.5em;
+    font-size:0.9rem;
+    border-radius:1em;
+}
+
+@media (max-width: 480px){
+    .card{
+        flex-direction: column;
+        width:100%;
+        min-height:100vh;
+    }
+    .card-score{
+        width:100%;
+        border-radius:0 0 1em 1em;
+        margin:0;
+        padding:1em 2em;
+        box-sizing: border-box;
+    }
+    .card-summary{
+        width:100%;
+        box-sizing: border-box;
+        margin-bottom:3em;
+    }
+}

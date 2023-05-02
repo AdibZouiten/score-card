@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | Results summary component</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>
+  <link rel="stylesheet" href="./style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@500;700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <div class="card">
+    <div class="card-score">
+        <h2>Your Result</h2>
+        <div class="score">
+          <p><span class="score-value clear">76</span><br> of 100</p>
+        </div>
+        <div class="score-description">
+          <h2 class="clear">Great</h2>
+          <p>You scored higher than 65% of the people who have taken these tests.</p>
+        </div>
+    </div>
+    <div class="card-summary">
+        <h2>Summary</h2>
+        <div class="Summary-row red">
+          <p class="Summary-skill"><img src="./../results-summary-component-main/assets/images/icon-reaction.svg"> Reaction</p>
+          <p class="Summary-stats">80 / <span class="light">100</span></p>
+        </div>
+        <div class="Summary-row yellow">
+          <p class="Summary-skill"><img src="./../results-summary-component-main/assets/images/icon-memory.svg"> Memory</p>
+          <p class="Summary-stats">92 / <span class="light">100</span></p>
+        </div>
+        <div class="Summary-row green">
+          <p class="Summary-skill"><img src="./../results-summary-component-main/assets/images/icon-verbal.svg"> Verbal</p>
+          <p class="Summary-stats">61 / <span class="light">100</span></p>
+        </div>
+        <div class="Summary-row purple">
+          <p class="Summary-skill"><img src="./../results-summary-component-main/assets/images/icon-visual.svg"> Visual</p>
+          <p class="Summary-stats">72 / <span class="light">100</span></p>
+        </div>
+        <a href="#" class="btn">Continue</a>
+    </div>
+  </div>
+</body>
+</html>
